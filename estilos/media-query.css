@@ -1,46 +1,64 @@
+
 @charset "UTF-8";
 
-@media screen and (min-width:768px) and (max-width:992px){
-    body{
-        background-image: linear-gradient(to top,#49a09d, #5f2c82);
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* CONFIGURAÇÃO PARA TABLET */
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
-    section#login{
-        display: flex;
+
+    section#login {
         width: 80vw;
-        
+        height: 280px;
     }
-    section#login > div#imagem{
-        justify-content: right;
-        width: 40%;
+
+    section#login > div#imagem {
+        float: left;
+        width: 30%;
         height: 100%;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 20px;
     }
-    section#login > div#formulario{
+
+    section#login > div#formulario {
+        float: right;
         width: 70%;
     }
 }
-@media screen and (min-width:992px){
-    body{
-        background-image: linear-gradient(to top,#49a09d, #5f2c82);
+
+@media screen and (min-width: 992px) { /* CONFIGURAÇÕES PARA DESKTOP */
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
-    section#login{
-        display: flex;
-        width: 990px;
+
+    section#login {
+        width: 950px;
+        height: 350px;
     }
-    section#login > div#imagem{
-        justify-content: left;
+
+    section#login > div#imagem {
+        float: right;
         width: 50%;
         height: 100%;
-        border-bottom-left-radius: 20px;
-        border-top-right-radius: 0px;
     }
-    section#login > div#formulario{
-        justify-content: right;
+
+    section#login > div#formulario {
+        float: left;
         width: 50%;
     }
-    div#formulario{
-        font-size: 1.2em;
+
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+
+    div#formulario > p {
+        font-size: 1em;
+        margin: 20px 0px;
     }
 }
-
